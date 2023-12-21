@@ -28,7 +28,9 @@ router.post('/',(req,res)=>{
 })
 
 
-
+router.put('/update',(req,res)=>{
+    //gettimeid and update 
+})
 
 
 module.exports = router;
