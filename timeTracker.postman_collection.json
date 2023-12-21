@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "46c547f2-dac3-488b-991d-663a65f882d9",
+		"name": "timeTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "projectGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/project"
+			},
+			"response": []
+		},
+		{
+			"name": "timeGet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/time/get?projectid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"time",
+						"get"
+					],
+					"query": [
+						{
+							"key": "projectid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addtime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n   { \r\n       \"projectId\": 1,\r\n    \"title\": \"m\",\r\n     \"startTime\": \"12:00\"\r\n     , \"endTime\": \"16:00\", \r\n     \"date\": \"1398/14/5\" \r\n     }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		}
+	]
+}
